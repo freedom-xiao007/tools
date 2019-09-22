@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # @Time    : 2019/5/18 20:34
-# @Author  : LiuWei
+# @Author  : Freedom
 # @Site    : 
 # @File    : Mysql2Excel.py
 # @Software: PyCharm
