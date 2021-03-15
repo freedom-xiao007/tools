@@ -23,7 +23,7 @@ def create(result, path, index, root_length):
     """
     files = os.listdir(path)
     for file in files:
-        if file[0] == "." or file == "picture":
+        if file[0] == "." or file == "picture" or file[-5:] == "xmind" or file == "extention":
             continue
         if file[-2:] == "md" or file[-3:] == "txt":
             print(index * 4 * " ", "- ", file)
@@ -36,12 +36,10 @@ def create(result, path, index, root_length):
 
 
 if __name__ == "__main__":
-    path = "C:\\Code\\Markdown\\LOG"
+    path = "F:\\Code\\Markdown\\LOG"
 
     file_path = path + "/README.md"
     result = open(file_path, "w", encoding="utf-8")
-    result.writelines("# 碎片学习随记\n")
-    result.writelines("***\n")
     result.writelines("## 文档索引\n")
 
     create(result, path, 0, len(path))
